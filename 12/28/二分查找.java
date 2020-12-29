@@ -2,7 +2,23 @@ public class TwoSearch {
     public static void main(String[] args) {
         //二分查找
         int[] arr = {1,2,3,4,5,6,7,8,9,10,12,15,16};
-        System.out.println(twoSearch(arr,15));
+        int num = 15;
+        int ret = twoSearch(arr,num);
+        System.out.print("你要查询的数组为：");
+        for (int i = 0;i<arr.length;i++)
+        {
+            System.out.print("  " + arr[i]+ "  ");
+        }
+        System.out.println();
+        if(ret == -1)
+        {
+            System.out.println("该数组中没有您要找的数！");
+        }
+        else {
+            System.out.println("你要找的数是：15");
+            System.out.println("他的下标为：" + ret);
+        }
+
     }
     public static int twoSearch(int[] arr,int num)
     {
