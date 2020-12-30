@@ -15,6 +15,9 @@ public class NarcissusNumber {
             }
         }
     }
+    //判断是否为水仙花数
+    //如果是则返回：true
+    //如果不是返回：false
     public static boolean narcissusNumber(int num)
     {
         int digit = digit(num);
@@ -37,6 +40,7 @@ public class NarcissusNumber {
             return false;
         }
     }
+    //计算一个数a的b次方
     public static int power(int a,int b)
     {
         int sum = 1;
@@ -46,6 +50,7 @@ public class NarcissusNumber {
         }
         return sum;
     }
+    //计算一个数有多少位
     public static int digit(int num)
     {
         int count = 0;
