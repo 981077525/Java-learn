@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class 打印二维数组 {
     public static void main(String[] args) {
         int[][] arr = {
@@ -7,8 +9,8 @@ public class 打印二维数组 {
                 {13,14,15,16},
                 {17,18,19,20}
         };
-//        System.out.println(arr.length);
-        printArrays(arr);
+        printArrays(null);
+        System.out.println(Arrays.deepToString(null));
     }
 
     /*
@@ -16,15 +18,20 @@ public class 打印二维数组 {
     * */
     public static void printArrays(int[][] arr)
     {
-        System.out.println("=====================");
-        for(int i = 0;i<arr.length;i++){
-            String ans = "[";
-            for(int j = 0;j<arr[i].length - 1;j++){
-                ans += arr[i][j] + ", ";
+        if(arr == null){
+            System.out.println("null");
+        }else{
+            System.out.println("=====================");
+            for(int i = 0;i<arr.length;i++){
+                String ans = "[";
+                for(int j = 0;j<arr[i].length - 1;j++){
+                    ans += arr[i][j] + ", ";
+                }
+                ans += arr[i][arr[i].length - 1] +"]";
+                System.out.println(ans);
             }
-            ans += arr[i][arr[i].length - 1] +"]";
-            System.out.println(ans);
+            System.out.println("=====================");
         }
-        System.out.println("=====================");
+
     }
 }
