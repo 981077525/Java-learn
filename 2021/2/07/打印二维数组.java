@@ -16,6 +16,7 @@ public class 打印二维数组 {
     * */
     public static void printArrays(int[][] arr)
     {
+        System.out.println("=====================");
         for(int i = 0;i<arr.length;i++){
             String ans = "[";
             for(int j = 0;j<arr[i].length - 1;j++){
@@ -24,5 +25,6 @@ public class 打印二维数组 {
             ans += arr[i][arr[i].length - 1] +"]";
             System.out.println(ans);
         }
+        System.out.println("=====================");
     }
 }
