@@ -30,4 +30,9 @@ class MinStack {
     public int getMin() {
         return minStack.peek();
     }
+<<<<<<< HEAD
 }
+=======
+}
+ 
+>>>>>>> b4922692bf91806560bb89491b9d22a1267188e5
