@@ -1,15 +1,9 @@
-<<<<<<< HEAD
-package leetcode;
-=======
 
->>>>>>> 3138d08b59ac688317d03e78034ddf9effe99b90
 import Tree.TreeNode;
 /*
-* 给你两棵二叉树的根节点 p 和 q ，编写一个函数来检验这两棵树是否相同。
-
-如果两个树在结构上相同，并且节点具有相同的值，则认为它们是相同的。
+*   判断二叉树是否镜像对称
 * */
-public class Solution1 {
+public class Solution101 {
     public static boolean isMirror(TreeNode p, TreeNode q) {
         if (p == null && q == null) {
             return true;
@@ -28,6 +22,15 @@ public class Solution1 {
         }
 
         return isMirror(p.right, q.left);
+    }
+
+
+    public boolean isSymmetric(TreeNode root) {
+        if(root == null){
+            return true;
+        }
+
+        return Solution1.isMirror(root.left,root.right);
     }
 
 }
