@@ -32,7 +32,7 @@ public class StringCompare implements Comparator<String> {
         System.out.println(queue.remove());
         System.out.println(queue.remove());
 
-    }
+    } 
 
 
 }
