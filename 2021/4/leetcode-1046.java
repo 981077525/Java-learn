@@ -1,3 +1,6 @@
+// 题目地址：
+// https://leetcode-cn.com/problems/last-stone-weight/submissions/
+
 
 //有一堆石头，每块石头的重量都是正整数。
 //每一回合，从中选出两块 最重的 石头，然后将它们一起粉碎。假设石头的重量分别为 x 和 y，且 x <= y。那么粉碎的可能结果如下：
